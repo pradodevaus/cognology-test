@@ -68,7 +68,7 @@ namespace Arf.WebApi.Controllers
         [Route("new")]
         [HttpPost]
         [ValidateModel]
-        public HttpResponseMessage AddBookings(NewBookingModel model)
+        public HttpResponseMessage NewBooking(NewBookingModel model)
         {
             _log.Debug("Calling IBookingService.NewBooking()");
 

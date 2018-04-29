@@ -277,7 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="PostmanScripts\CognologyTest.postman_collection.json" />
+    <Content Include="PostmanCollection\CognologyTest.postman_collection.json" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />

@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Search Booking",
+			"name": "Search for bookings",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -37,7 +37,7 @@
 			"response": []
 		},
 		{
-			"name": "Check Availability",
+			"name": "Check availability",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -68,7 +68,7 @@
 			"response": []
 		},
 		{
-			"name": "Get all flights",
+			"name": "List all flights",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -90,7 +90,7 @@
 			"response": []
 		},
 		{
-			"name": "New Booking",
+			"name": "Make booking",
 			"request": {
 				"method": "POST",
 				"header": [
