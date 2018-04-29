@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "fc5911f6-06cc-4b9d-a87d-dd404222c17f",
+		"name": "CognologyTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lastname\" : \"Doe\",\n\t\"travelDate\": \"30/04/2018\",\n\t\"flightNumber\":\"ARF01\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:26145/api/v1/bookings/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26145",
+					"path": [
+						"api",
+						"v1",
+						"bookings",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Availability",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"travelDate\":\"30/04/2018\",\n\t\"passengerCount\": 3,\n\t\"depatureCityCode\":\"SYD\",\n\t\"arrivalCityCode\":\"MEL\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:26145/api/v1/flights/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26145",
+					"path": [
+						"api",
+						"v1",
+						"flights",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all flights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:26145/api/v1/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26145",
+					"path": [
+						"api",
+						"v1",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"flightNumber\":\"ARF02\",\n\t\"travelDate\":\"30/04/2018\",\n\t\"passengers\":[{\"firstname\":\"Pradeep\", \"lastname\":\"Chouhan\",\"dob\":\"20/10/1999\",\"mobile\":\"0444444444\"}]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:26145/api/v1/bookings/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26145",
+					"path": [
+						"api",
+						"v1",
+						"bookings",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f72d5183-8c4b-4c4d-97a2-ea20a2d5e5dd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "70ebe6b6-dfb0-4a0f-9534-39766ba48c48",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
